@@ -1,5 +1,7 @@
 package confenalco.aritmetica;
 
+import java.util.Scanner;
+
 public class Suma {
 	
 	/**
@@ -56,4 +58,54 @@ public class Suma {
 		
 		System.out.println("***************************************");
 	}
+	
+	public void sumarInteractivo() {
+		Scanner teclado = new Scanner(System.in);
+		int n1;
+		int n2;
+		int resultado;
+		System.out.println("Este programa  es capaz de sumar dos numeros, "
+				+ "a continuacion le vamos a pedir los numeros");
+		
+		System.out.println("Ingrese el primer numero");
+		n1 = teclado.nextInt();
+		
+		System.out.println("Ingrese el segundo numero");
+		n2 = teclado.nextInt();
+		
+		resultado = n1+n2;
+		
+		System.out.println("El resultado de la suma es " + resultado);
+		
+		System.out.println(" Gracias por confiar en nosotros, hasta la proxima");
+		
+	}
+	
+	public void restarInteractivo() {
+		Scanner teclado = new Scanner(System.in);
+		int n1;
+		int n2;
+		int resultado;
+		
+		System.out.println("\r\n\r\n\r\n\r\nEste programa  es capaz de restar dos numeros, "
+				+ "a continuacion le vamos a pedir los numeros");
+		
+		System.out.println("Ingrese el primer numero");
+		n1 = teclado.nextInt();
+		
+		System.out.println("Ingrese el segundo numero");
+		n2 = teclado.nextInt();
+		
+		resultado = n1-n2;
+		
+		System.out.println("El resultado de la resta es " + resultado);
+		
+		System.out.println(" Gracias por confiar en nosotros, hasta la proxima");
+		
+	}
 }
+
+
+
+
+
