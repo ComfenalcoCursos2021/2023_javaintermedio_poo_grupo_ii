@@ -10,11 +10,9 @@ public class Lanzador {
 		
 		Suma fotocopia = new Suma();
 		
-		Suma fotocopia1 = new Suma();
-		
 		
 		fotocopia.sumarInteractivo();
-		fotocopia.restarInteractivo();
+		
 		
 		
 
