@@ -1,6 +1,6 @@
 package com.alv.grupoii.recursos;
 
-public class Bombillo implements IPrendido,IApagado {
+public abstract class Bombillo implements IPrendido,IApagado {
 
 	private String nombre;
 	private String marca ;

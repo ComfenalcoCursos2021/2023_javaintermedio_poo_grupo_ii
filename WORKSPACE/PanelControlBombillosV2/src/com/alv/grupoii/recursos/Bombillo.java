@@ -1,7 +1,9 @@
 package com.alv.grupoii.recursos;
 
-public class Bombillo implements IPrendido,IApagado {
+public class Bombillo  {
 
+	public static String adorno = ""; 
+	
 	private String nombre;
 	private String marca ;
 	private int intensidad;
@@ -38,6 +40,30 @@ public class Bombillo implements IPrendido,IApagado {
 	}
 	public void apagar() {
 		this.estaPrendido = false;
+	}
+	
+	public String getNombreAdorno() {
+		return Bombillo.adorno + this.nombre;
+	}
+	
+	public static void imprimirGarantia() {
+		System.out.println("**********************************************");
+		System.out.println("*                                            *");
+		System.out.println("*                   GARANTIA                 *");
+		System.out.println("*                                            *");
+		System.out.println("**********************************************");
+		
+	}
+	public static String getReferencia() {
+		return "23156489723";
+	}
+	
+	public static boolean probador(int voltaje) {
+		if(voltaje > 80 && voltaje <150) {
+			return true;
+		}
+		
+		return false;
 	}
 	
 }

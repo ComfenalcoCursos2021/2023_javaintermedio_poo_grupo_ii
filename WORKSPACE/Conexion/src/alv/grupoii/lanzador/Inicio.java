@@ -2,6 +2,7 @@ package alv.grupoii.lanzador;
 
 import alv.grupoii.fabrica.FabricaConexiones;
 import alv.grupoii.interfaces.IConexion;
+import alv.grupoii.recursos.ConexionMySQL;
 
 public class Inicio {
 
