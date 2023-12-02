@@ -6,7 +6,6 @@ public class Elemento {
 	private Elemento siguiente;
 	
 	
-	
 	public Elemento() {
 		
 	}
