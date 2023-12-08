@@ -1,5 +1,8 @@
 package com.grupoii.recursos;
 
+import com.grupoii.excepciones.MalAugurioException;
+import com.grupoii.excepciones.ManejadorListaVaciaException;
+
 public class ManejadorLista {
 
 	private Elemento primero;
@@ -38,10 +41,23 @@ public class ManejadorLista {
 	
 	public int getPrimero() {
 		interactivo = primero;
-		return interactivo.getDato();
+		if(interactivo == null) {
+			return -99999;
+		} else {
+			return interactivo.getDato();	
+		}
+		
 	}
-	public int getAnterior() {
+	public int getAnterior() throws Exception  {
+		
+		if(interactivo == null) {
+			throw new ManejadorListaVaciaException("Mano ojo que no hay nada");
+		}
+		
 		interactivo = interactivo.getAnterior();
+		if(interactivo.getDato() == 6) {
+			throw new MalAugurioException("El 6 es mal augurio");
+		}
 		return interactivo.getDato();
 	}
 	public int getSiguiente() {
