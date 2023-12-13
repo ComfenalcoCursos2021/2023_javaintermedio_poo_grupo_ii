@@ -66,6 +66,8 @@ public class Interfaz {
 
 		int opcion = 999;
 		int dato = this.MANEJADOR.getPrimero();
+		
+		
 		while (opcion != 99) {
 			System.out.println("*********************************");
 			System.out.println("************** DATO *************");
