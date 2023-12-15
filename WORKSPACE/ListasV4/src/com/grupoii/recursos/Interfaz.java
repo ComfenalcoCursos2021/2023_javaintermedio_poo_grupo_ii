@@ -13,10 +13,15 @@ public class Interfaz {
 	}
 
 	private void menu1() {
+		
 		System.out.println("******************************************");
 		System.out.println("1.) Agregar");
-		System.out.println("2.) Recorrer");
-		System.out.println("3.) ImprimirLista");
+		
+		if(!this.MANEJADOR.estaVacia()) {
+			System.out.println("2.) Recorrer");
+			System.out.println("3.) ImprimirLista");	
+		}
+		
 		System.out.println("99.) Salir");
 		System.out.println("******************************************");
 	}

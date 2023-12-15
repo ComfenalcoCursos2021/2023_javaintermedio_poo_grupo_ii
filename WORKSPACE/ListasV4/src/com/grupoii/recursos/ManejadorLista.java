@@ -10,6 +10,10 @@ public class ManejadorLista {
 	
 	private Elemento interactivo;
 
+	public boolean estaVacia() {
+		return primero == null;
+	}
+	
 	public void agregar(int i) {
 		Elemento nuevo = new Elemento();
 		nuevo.setDato(i);
