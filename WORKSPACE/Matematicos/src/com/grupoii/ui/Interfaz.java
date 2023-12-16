@@ -6,7 +6,7 @@ import com.grupoii.matematicos.Collatz;
 
 public class Interfaz {
 
-	private final int OPCION_SALIR = 99;
+	private final int OPCION_SALIR = -9;
 	private Scanner TECLADO = new Scanner(System.in);
 	private Collatz C = new Collatz();
 	private void  menu() {
@@ -22,9 +22,11 @@ public class Interfaz {
 		while(opcion != this.OPCION_SALIR) {
 			this.menu();
 			opcion = TECLADO.nextInt();
+			
 			if(opcion != this.OPCION_SALIR) {
 				C.imprimirSecuencia(opcion);
 			}
+			
 		}
 	}
 }
