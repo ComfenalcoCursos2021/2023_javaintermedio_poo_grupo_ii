@@ -2,6 +2,7 @@ package com.grupoii.lanzador;
 
 import java.util.Scanner;
 
+import com.grupoii.matematicos.Collatz;
 import com.grupoii.ui.Interfaz;
 
 public class Lanzador {
@@ -9,8 +10,18 @@ public class Lanzador {
 	public static void main(String[] args) {
 
 		//pruebaValidacion();
-		Interfaz inter = new Interfaz();
-		inter.iniciarPrograma();
+		/*Interfaz inter = new Interfaz();
+		inter.iniciarPrograma();*/
+		
+		Collatz c = new Collatz();
+		try {
+			String cadena = c.obtenerSecuencia(231543189);
+			System.out.println(cadena);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		System.out.println("Termino");
 	}
 	
