@@ -7,6 +7,8 @@ public class Collatz implements Serializable {
 	/**
 	 * 
 	 */
+	private static final long serialVersionUID =   -3134597355496279620L;
+	
 	//private static final long serialVersionUID = -5430668992263480538L;
 	//private static final long serialVersionUID = -5430668992263480538L;
 	public int nuevo(int m) {
